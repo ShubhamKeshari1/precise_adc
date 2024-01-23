@@ -31,67 +31,89 @@
 #define DT_SPEC_AND_COMMA(node_id, prop, idx) \
 	ADC_DT_SPEC_GET_BY_IDX(node_id, idx),
 
+#include "adc_sampling.h"
+
 /* Data of ADC io-channels specified in devicetree. */
-static const struct adc_dt_spec adc_channels[] = {
+
+struct adc_dt_spec adc_channels[] = {
 	DT_FOREACH_PROP_ELEM(DT_PATH(zephyr_user), io_channels,
 			     DT_SPEC_AND_COMMA)
 };
 
 int main(void)
 {
-	int err;
-	uint32_t count = 0;
-	uint16_t buf;
-	struct adc_sequence sequence = {
-		.buffer = &buf,
-		/* buffer size in bytes, not number of samples */
-		.buffer_size = sizeof(buf),
-	};
-
-	/* Configure channels individually prior to sampling. */
-	for (size_t i = 0U; i < ARRAY_SIZE(adc_channels); i++) {
-		if (!adc_is_ready_dt(&adc_channels[i])) {
-			printk("ADC controller device %s not ready\n", adc_channels[i].dev->name);
-			return 0;
-		}
-
-		err = adc_channel_setup_dt(&adc_channels[i]);
-		if (err < 0) {
-			printk("Could not setup channel #%d (%d)\n", i, err);
-			return 0;
-		}
+#if DT_NODE_HAS_COMPAT(DT_CHOSEN(zephyr_shell_uart), zephyr_cdc_acm_uart)
+	const struct device *dev;
+        dev = DEVICE_DT_GET(DT_CHOSEN(zephyr_shell_uart));
+	if (!device_is_ready(dev) || usb_enable(NULL)) 
+	{
+		return 0;
 	}
+#endif
+        uint32_t dtr = 0;
+        while (!dtr) 
+	{
+	  int err;
+	  //float p_avg_mv=0;
+	  //uint32_t count = 0;
+	  uint16_t buf;
+	  struct adc_sequence sequence = {
+		  .buffer = &buf,
+		  /* buffer size in bytes, not number of samples */
+		  .buffer_size = sizeof(buf),
+	  };
 
-	while (1) {
-		/*printk("ADC reading[%u]:\n", count++);*/
-		/*for (*/size_t i = 0U;/*; i < ARRAY_SIZE(adc_channels); i++) {*/
-			int32_t val_mv;
+	  /* Configure channels individually prior to sampling. */
+	  for (size_t i = 0U; i < ARRAY_SIZE(adc_channels); i++) {
+		  if (!adc_is_ready_dt(&adc_channels[i])) {
+			  printk("ADC controller device %s not ready\n", adc_channels[i].dev->name);
+			  return 0;
+		  }
 
-			printk("- %s, channel %d: ",
-			       adc_channels[i].dev->name,
-			       adc_channels[i].channel_id);
+		  err = adc_channel_setup_dt(&adc_channels[i]);
+		  if (err < 0) {
+			  printk("Could not setup channel #%d (%d)\n", i, err);
+			  return 0;
+		  }
+	  }
 
-			(void)adc_sequence_init_dt(&adc_channels[i], &sequence);
+	  while (1) {
+		  /*printk("ADC reading[%u]:\n", count++);*/
+		  /*for (*/size_t i = 0U;/*; i < ARRAY_SIZE(adc_channels); i++) {*/
+			  int32_t val_mv;
+			  int32_t adc_raw =0;
 
-			err = adc_read(adc_channels[i].dev, &sequence);
-			if (err < 0) {
-				printk("Could not read (%d)\n", err);
-				continue;
-			}
-			val_mv = (int32_t)buf;
-			err = adc_raw_to_millivolts_dt(&adc_channels[i], &val_mv);
-			/* conversion to mV may not be supported, skip if not */
-			if (err < 0) {
-				printk(" (value in mV not available)\n");
-			} else {
-				printk("%dmV\n", val_mv);
-				
-			}
-			/*}*/
-			
-		}
+			  /*printk("- %s, channel %d: \n",
+			         adc_channels[i].dev->name,
+			         adc_channels[i].channel_id);*/
 
-		k_sleep(K_MSEC(10));
+			  (void)adc_sequence_init_dt(&adc_channels[i], &sequence);
+
+			  err = adc_read(adc_channels[i].dev, &sequence);
+			  if (err < 0) {
+				  printk("Could not read (%d)\n", err);
+				  continue;
+			  }
+			  val_mv = (int32_t)buf;
+			  //printk("RAW ADC = %d\n", val_mv);
+			  adc_raw = val_mv;
+			  //printk("RAW ADC = %d\n", adc_raw);
+			  //printk("VAL_MV ADC = %d\n", val_mv);
+			  err = adc_raw_to_millivolts_dt(&adc_channels[i], &val_mv);
+			  
+			  /* conversion to mV may not be supported, skip if not */
+			  if (err < 0) {
+				  printk(" (value in mV not available)\n");
+			  } else {
+			          //printk("While(1)adc=%dmV\n", val_mv);
+			          adc_sampling(val_mv,adc_raw);
+			          //adc_sampling(adc_raw);
+				  //printk("Avg adc=%0.2fmV\n", p_avg_mv);
+			  }
+			  /*}*/
+
+		  k_sleep(K_MSEC(10));
+	  }
 	}
 	return 0;
 }

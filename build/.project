@@ -1,0 +1,2155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>adc@build</name>
+	<comment></comment>
+	<projects></projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.make.core.makeBuilder</name>
+			<triggers>clean,full,incremental,</triggers>
+			<arguments>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.cleanBuildTarget</key>
+					<value>clean</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableCleanBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.append_environment</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.stopOnError</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enabledIncrementalBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.command</key>
+					<value>/usr/bin/ninja</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.contents</key>
+					<value>org.eclipse.cdt.make.core.activeConfigSettings</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.inc</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.arguments</key>
+					<value></value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.buildLocation</key>
+					<value>/home/shubham/my_projects/precise_adc/build</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.useDefaultBuildCmd</key>
+					<value>false</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.environment</key>
+					<value>VERBOSE=1|CMAKE_NO_VERBOSE=1|</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableFullBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.auto</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableAutoBuild</key>
+					<value>false</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.clean</key>
+					<value>clean</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.fullBuildTarget</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.buildArguments</key>
+					<value></value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.location</key>
+					<value>/home/shubham/my_projects/precise_adc/build</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.autoBuildTarget</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.core.errorOutputParser</key>
+					<value>org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser;</value>
+				</dictionary>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.make.core.ScannerConfigBuilder</name>
+			<arguments/>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.make.core.makeNature</nature>
+		<nature>org.eclipse.cdt.make.core.ScannerConfigNature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>[Source directory]</name>
+			<type>2</type>
+			<location>/home/shubham/my_projects/precise_adc/source</location>
+		</link>
+		<link>
+			<name>[Subprojects]</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Subprojects]/Picolibc</name>
+			<type>2</type>
+			<location>/home/shubham/zephyrproject/modules/lib/picolibc</location>
+		</link>
+		<link>
+			<name>[Subprojects]/Zephyr-Kernel</name>
+			<type>2</type>
+			<location>/home/shubham/zephyrproject/zephyr</location>
+		</link>
+		<link>
+			<name>[Subprojects]/adc</name>
+			<type>2</type>
+			<location>/home/shubham/my_projects/precise_adc/source</location>
+		</link>
+		<link>
+			<name>[Targets]</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] app</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] app/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] app/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] app/Source Files/main.c</name>
+			<type>1</type>
+			<location>/home/shubham/my_projects/precise_adc/source/src/main.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] app/Source Files/adc_sampling.c</name>
+			<type>1</type>
+			<location>/home/shubham/my_projects/precise_adc/source/src/adc_sampling.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] app/Source Files/calc_avg.c</name>
+			<type>1</type>
+			<location>/home/shubham/my_projects/precise_adc/source/src/calc_avg.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] app/Source Files/app_shellcmd_adc.c</name>
+			<type>1</type>
+			<location>/home/shubham/my_projects/precise_adc/source/src/app_shellcmd_adc.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] app/Source Files/uart_reinit.c</name>
+			<type>1</type>
+			<location>/home/shubham/my_projects/precise_adc/source/src/uart_reinit.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] app/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] app/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] app/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] app/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] app/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] app/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/getopt.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/posix/getopt/getopt.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/getopt_common.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/posix/getopt/getopt_common.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/cbprintf_packaged.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/os/cbprintf_packaged.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/dec.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/os/dec.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/fdtable.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/os/fdtable.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/hex.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/os/hex.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/printk.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/os/printk.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/rb.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/os/rb.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/sem.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/os/sem.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/thread_entry.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/os/thread_entry.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/timeutil.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/os/timeutil.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/heap.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/os/heap.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/heap-validate.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/os/heap-validate.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/bitarray.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/os/bitarray.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/multi_heap.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/os/multi_heap.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/cbprintf_complete.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/os/cbprintf_complete.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/cbprintf.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/os/cbprintf.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/ring_buffer.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/os/ring_buffer.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/assert.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/os/assert.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/mpsc_pbuf.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/os/mpsc_pbuf.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/configs.c</name>
+			<type>1</type>
+			<location>/home/shubham/my_projects/precise_adc/build/zephyr/misc/generated/configs.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/soc.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/soc/arm/st_stm32/stm32f3/soc.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/stm32cube_hal.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/soc/arm/st_stm32/common/stm32cube_hal.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/soc_config.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/soc/arm/st_stm32/common/soc_config.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/log_core.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/logging/log_core.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/log_mgmt.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/logging/log_mgmt.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/log_cache.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/logging/log_cache.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/log_msg.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/logging/log_msg.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/log_output.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/logging/log_output.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/log_cmds.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/logging/log_cmds.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/log_backend_uart.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/logging/backends/log_backend_uart.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/stats.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/stats/stats.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/stats_shell.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/stats/stats_shell.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/tracing_none.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/tracing/tracing_none.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/usb_device.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/usb/device/usb_device.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/usb_descriptor.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/usb/device/usb_descriptor.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/usb_transfer.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/usb/device/usb_transfer.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/cdc_acm.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/usb/device/class/cdc_acm.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/usb_work_q.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/usb/device/usb_work_q.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/kernel_service.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/shell/modules/kernel_service.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/device_service.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/shell/modules/device_service.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/date_service.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/shell/modules/date_service.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/devmem_service.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/shell/modules/devmem_service.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/shell_uart.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/shell/backends/shell_uart.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/shell.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/shell/shell.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/shell_fprintf.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/shell/shell_fprintf.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/shell_utils.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/shell/shell_utils.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/shell_ops.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/shell/shell_ops.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/shell_help.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/shell/shell_help.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/shell_cmds.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/shell/shell_cmds.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/shell_history.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/shell/shell_history.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Source Files/shell_wildcard.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/shell/shell_wildcard.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] zephyr/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] offsets</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] offsets/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] offsets/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] offsets/Source Files/offsets.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/offsets/offsets.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] offsets/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] offsets/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] offsets/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] offsets/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] offsets/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] offsets/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_pre0</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_pre0/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_pre0/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_pre0/Source Files/empty_file.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/misc/empty_file.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_pre0/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_pre0/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_pre0/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_pre0/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_pre0/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_pre0/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_final</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_final/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_final/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_final/Source Files/empty_file.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/misc/empty_file.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_final/Source Files/isr_tables.c</name>
+			<type>1</type>
+			<location>/home/shubham/my_projects/precise_adc/build/zephyr/isr_tables.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_final/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_final/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_final/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_final/CMake Rules/isr_tables.c.rule</name>
+			<type>1</type>
+			<location>/home/shubham/my_projects/precise_adc/build/zephyr/isr_tables.c.rule</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_final/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_final/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] zephyr_final/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__common</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__common/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__common/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__common/Source Files/sw_isr_common.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/common/sw_isr_common.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__common/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__common/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__common/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__common/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__common/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__common/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] isr_tables</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] isr_tables/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] isr_tables/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] isr_tables/Source Files/isr_tables.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/common/isr_tables.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] isr_tables/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] isr_tables/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] isr_tables/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] isr_tables/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] isr_tables/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] isr_tables/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32//cpu_idle.S</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/cpu_idle.S</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32//nmi_on_reset.S</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/nmi_on_reset.S</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32//swap_helper.S</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/swap_helper.S</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32//isr_wrapper.S</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/isr_wrapper.S</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32/Source Files/fatal.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/fatal.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32/Source Files/irq_manage.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/irq_manage.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32/Source Files/nmi.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/nmi.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32/Source Files/prep_c.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/prep_c.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32/Source Files/swap.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/swap.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32/Source Files/thread.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/thread.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__cortex_m</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__cortex_m/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__cortex_m//exc_exit.S</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/cortex_m/exc_exit.S</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__cortex_m//fault_s.S</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/cortex_m/fault_s.S</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__cortex_m//reset.S</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/cortex_m/reset.S</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__cortex_m//vector_table.S</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/cortex_m/vector_table.S</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__cortex_m/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__cortex_m/Source Files/fault.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/cortex_m/fault.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__cortex_m/Source Files/fpu.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/cortex_m/fpu.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__cortex_m/Source Files/irq_init.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/cortex_m/irq_init.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__cortex_m/Source Files/scb.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/cortex_m/scb.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__cortex_m/Source Files/thread_abort.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/cortex_m/thread_abort.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__cortex_m/Source Files/timing.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/cortex_m/timing.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__cortex_m/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__cortex_m/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__cortex_m/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__cortex_m/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__cortex_m/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__cortex_m/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__mpu</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__mpu/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__mpu/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__mpu/Source Files/arm_core_mpu.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/mpu/arm_core_mpu.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__mpu/Source Files/arm_mpu.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/arch/arm/core/aarch32/mpu/arm_mpu.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__mpu/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__mpu/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__mpu/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__mpu/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__mpu/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] arch__arm__core__aarch32__mpu/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__libc__newlib</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__libc__newlib/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__libc__newlib/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__libc__newlib/Source Files/libc-hooks.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/libc/newlib/libc-hooks.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__libc__newlib/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__libc__newlib/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__libc__newlib/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__libc__newlib/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__libc__newlib/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__libc__newlib/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__libc__common</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__libc__common/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__libc__common/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__libc__common/Source Files/abort.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/libc/common/source/stdlib/abort.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__libc__common/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__libc__common/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__libc__common/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__libc__common/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__libc__common/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__libc__common/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__posix</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__posix/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__posix/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__posix/Source Files/fnmatch.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/posix/fnmatch.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__posix/Source Files/clock.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/posix/clock.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__posix/Source Files/nanosleep.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/posix/nanosleep.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__posix/Source Files/sleep.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/posix/sleep.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__posix/Source Files/timer.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/lib/posix/timer.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__posix/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__posix/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__posix/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__posix/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__posix/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] lib__posix/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] soc__arm__common__cortex_m</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] soc__arm__common__cortex_m/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] soc__arm__common__cortex_m/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] soc__arm__common__cortex_m/Source Files/arm_mpu_regions.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/soc/arm/common/cortex_m/arm_mpu_regions.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] soc__arm__common__cortex_m/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] soc__arm__common__cortex_m/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] soc__arm__common__cortex_m/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] soc__arm__common__cortex_m/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] soc__arm__common__cortex_m/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] soc__arm__common__cortex_m/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] subsys__timing</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] subsys__timing/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] subsys__timing/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] subsys__timing/Source Files/timing.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/subsys/timing/timing.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] subsys__timing/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] subsys__timing/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] subsys__timing/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] subsys__timing/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] subsys__timing/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] subsys__timing/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__interrupt_controller</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__interrupt_controller/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__interrupt_controller/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__interrupt_controller/Source Files/intc_exti_stm32.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/drivers/interrupt_controller/intc_exti_stm32.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__interrupt_controller/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__interrupt_controller/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__interrupt_controller/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__interrupt_controller/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__interrupt_controller/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__interrupt_controller/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__usb__device</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__usb__device/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__usb__device/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__usb__device/Source Files/usb_dc_stm32.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/drivers/usb/device/usb_dc_stm32.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__usb__device/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__usb__device/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__usb__device/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__usb__device/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__usb__device/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__usb__device/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__adc</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__adc/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__adc/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__adc/Source Files/adc_common.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/drivers/adc/adc_common.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__adc/Source Files/adc_shell.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/drivers/adc/adc_shell.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__adc/Source Files/adc_stm32.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/drivers/adc/adc_stm32.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__adc/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__adc/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__adc/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__adc/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__adc/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__adc/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__clock_control</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__clock_control/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__clock_control/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__clock_control/Source Files/clock_stm32_ll_common.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/drivers/clock_control/clock_stm32_ll_common.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__clock_control/Source Files/clock_stm32f0_f3.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/drivers/clock_control/clock_stm32f0_f3.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__clock_control/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__clock_control/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__clock_control/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__clock_control/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__clock_control/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__clock_control/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__console</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__console/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__console/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__console/Source Files/uart_console.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/drivers/console/uart_console.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__console/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__console/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__console/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__console/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__console/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__console/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__gpio</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__gpio/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__gpio/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__gpio/Source Files/gpio_stm32.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/drivers/gpio/gpio_stm32.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__gpio/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__gpio/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__gpio/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__gpio/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__gpio/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__gpio/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__hwinfo</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__hwinfo/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__hwinfo/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__hwinfo/Source Files/hwinfo_weak_impl.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/drivers/hwinfo/hwinfo_weak_impl.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__hwinfo/Source Files/hwinfo_shell.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/drivers/hwinfo/hwinfo_shell.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__hwinfo/Source Files/hwinfo_stm32.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/drivers/hwinfo/hwinfo_stm32.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__hwinfo/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__hwinfo/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__hwinfo/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__hwinfo/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__hwinfo/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__hwinfo/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__pinctrl</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__pinctrl/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__pinctrl/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__pinctrl/Source Files/common.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/drivers/pinctrl/common.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__pinctrl/Source Files/pinctrl_stm32.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/drivers/pinctrl/pinctrl_stm32.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__pinctrl/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__pinctrl/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__pinctrl/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__pinctrl/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__pinctrl/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__pinctrl/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__reset</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__reset/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__reset/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__reset/Source Files/reset_stm32.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/drivers/reset/reset_stm32.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__reset/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__reset/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__reset/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__reset/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__reset/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__reset/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__serial</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__serial/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__serial/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__serial/Source Files/uart_stm32.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/drivers/serial/uart_stm32.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__serial/Source Files/empty_file.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/misc/empty_file.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__serial/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__serial/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__serial/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__serial/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__serial/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__serial/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__timer</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__timer/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__timer/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__timer/Source Files/sys_clock_init.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/drivers/timer/sys_clock_init.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__timer/Source Files/cortex_m_systick.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/drivers/timer/cortex_m_systick.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__timer/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__timer/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__timer/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__timer/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__timer/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] drivers__timer/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ..__modules__hal__stm32__stm32cube</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ..__modules__hal__stm32__stm32cube/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ..__modules__hal__stm32__stm32cube/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ..__modules__hal__stm32__stm32cube/Source Files/system_stm32f3xx.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/modules/hal/stm32/stm32cube/stm32f3xx/soc/system_stm32f3xx.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ..__modules__hal__stm32__stm32cube/Source Files/stm32f3xx_hal.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/modules/hal/stm32/stm32cube/stm32f3xx/drivers/src/stm32f3xx_hal.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ..__modules__hal__stm32__stm32cube/Source Files/stm32f3xx_hal_rcc.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/modules/hal/stm32/stm32cube/stm32f3xx/drivers/src/stm32f3xx_hal_rcc.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ..__modules__hal__stm32__stm32cube/Source Files/stm32f3xx_hal_rcc_ex.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/modules/hal/stm32/stm32cube/stm32f3xx/drivers/src/stm32f3xx_hal_rcc_ex.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ..__modules__hal__stm32__stm32cube/Source Files/stm32f3xx_hal_pcd.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/modules/hal/stm32/stm32cube/stm32f3xx/drivers/src/stm32f3xx_hal_pcd.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ..__modules__hal__stm32__stm32cube/Source Files/stm32f3xx_hal_pcd_ex.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/modules/hal/stm32/stm32cube/stm32f3xx/drivers/src/stm32f3xx_hal_pcd_ex.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ..__modules__hal__stm32__stm32cube/Source Files/stm32f3xx_ll_usb.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/modules/hal/stm32/stm32cube/stm32f3xx/drivers/src/stm32f3xx_ll_usb.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ..__modules__hal__stm32__stm32cube/Source Files/stm32f3xx_ll_utils.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/modules/hal/stm32/stm32cube/stm32f3xx/drivers/src/stm32f3xx_ll_utils.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ..__modules__hal__stm32__stm32cube/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ..__modules__hal__stm32__stm32cube/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ..__modules__hal__stm32__stm32cube/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ..__modules__hal__stm32__stm32cube/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ..__modules__hal__stm32__stm32cube/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ..__modules__hal__stm32__stm32cube/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/main_weak.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/main_weak.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/banner.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/banner.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/busy_wait.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/busy_wait.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/device.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/device.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/errno.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/errno.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/fatal.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/fatal.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/init.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/init.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/kheap.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/kheap.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/mem_slab.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/mem_slab.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/thread.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/thread.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/version.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/version.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/idle.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/idle.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/mailbox.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/mailbox.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/msg_q.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/msg_q.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/mutex.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/mutex.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/queue.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/queue.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/sem.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/sem.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/stack.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/stack.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/system_work_q.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/system_work_q.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/work.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/work.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/sched.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/sched.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/condvar.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/condvar.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/xip.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/xip.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/timeout.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/timeout.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/timer.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/timer.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/poll.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/poll.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/usage.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/usage.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/mempool.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/mempool.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Source Files/dynamic_disabled.c</name>
+			<type>1</type>
+			<location>/home/shubham/zephyrproject/zephyr/kernel/dynamic_disabled.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] kernel/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
